@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <header class="site-header">
+      <div class="container d-flex position-relative">
+        <img
+          class="position-absolute mt-5 top-0 end-0"
+          src="./img/heart.svg"
+          alt=""
+          width="50"
+          height="50"
+        />
+        <img
+          class="mt-5 mx-auto"
+          src="./img/logo-pokemon.png"
+          alt="pokemon logotipe image"
+          width="610"
+          height="225"
+        />
+      </div>
+    </header>
+    <main class="site-main mt-5">
+      <section class="hero mx-5">
+        <div class="container hero__container">
+          <form method="post" class="d-flex justify-content-between">
+            <select class="form-select hero__select-gross text-center">
+              <option selected hidden disabled>Gross</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <input
+              class="form-control me-2 hero__search-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <select class="form-select hero__select-gross text-center">
+              <option selected hidden disabled>Aa-Zz</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <button type="submit" class="btn hero__button">Button</button>
+          </form>
+        </div>
+      </section>
+      <section class="card mt-5">
+        <div class="container card__container">
+          <ul
+            class="card__list p-0 list-unstyled d-flex flex-wrap justify-content-between"
+          >
+            <li class="card__item">
+              <img
+                class="card__img"
+                src="http://www.serebii.net/pokemongo/pokemon/001.png"
+                alt=""
+                width="157"
+              />
+              <hr class="hr" />
+              <div class="card__body position-relative">
+                <img
+                  class="position-absolute top-0 end-0 me-4"
+                  src="./img/heart.svg"
+                  alt=""
+                  width="30"
+                />
+                <p class="card__title">Pokemons</p>
+                <p class="card__text">Grass, Poison</p>
+                <p class="card__desc">6.9 kg</p>
+                <p class="card__desc ms-4">99 age</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/pokemons.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
